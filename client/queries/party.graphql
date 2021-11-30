@@ -1,0 +1,7 @@
+query party {
+  party {
+    id
+    name
+    image
+  }
+}

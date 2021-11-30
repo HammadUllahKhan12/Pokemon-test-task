@@ -1,0 +1,16 @@
+type Pokemon {
+  id: ID!
+  name: String!
+  image: String!
+}
+
+type MyPokemon {
+  name: String
+  url: String
+}
+
+type Query {
+  party: [Pokemon]
+  search(search: String): [Pokemon]
+  getAllPokemons(search: String): [MyPokemon]
+}
